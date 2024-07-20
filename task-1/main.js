@@ -6,6 +6,9 @@ function EvenOrOdd(num) {
     }
 }
 
+EvenOrOdd(5)
+EvenOrOdd(6)
+
 function Circle(Radius) {
     let Area = Radius * Radius * Math.PI
     let Circumference = 2 * Radius * Math.PI
@@ -13,10 +16,14 @@ function Circle(Radius) {
     console.log("Circumference = " + Circumference);
 }
 
+Circle(2)
+
 function Sum(num1 , num2) {
     let sum = num1 + num2
     console.log("Sum = " + sum);
 }
+
+Sum(6 , 5)
 
 function NegativeChecker(num1 , num2) {
     if (Math.abs(num1) == num1) {
@@ -26,6 +33,9 @@ function NegativeChecker(num1 , num2) {
     }
 }
 
+NegativeChecker(-1 , 2)
+NegativeChecker(3 , -5)
+
 function reverseString(str) {
     let restr = ""
     for (let i = str.length - 1; i >= 0; i--) {
@@ -33,3 +43,6 @@ function reverseString(str) {
     }
     console.log(restr);
 }
+
+reverseString("Welcome")
+reverseString("Peter")
