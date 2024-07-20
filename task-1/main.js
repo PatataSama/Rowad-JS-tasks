@@ -1,3 +1,5 @@
+let num = parseInt(prompt("Enter the number:"))
+
 function EvenOrOdd(num) {
     if (num%2 == 0) {
         console.log("The number is even");
@@ -6,8 +8,9 @@ function EvenOrOdd(num) {
     }
 }
 
-EvenOrOdd(5)
-EvenOrOdd(6)
+EvenOrOdd(num);
+
+let Radius = Number(prompt("Enter the Radius:"))
 
 function Circle(Radius) {
     let Area = Radius * Radius * Math.PI
@@ -16,25 +19,37 @@ function Circle(Radius) {
     console.log("Circumference = " + Circumference);
 }
 
-Circle(2)
+Circle(Radius)
+
+let num1 = parseFloat(prompt("Enter first number for sum"))
+let num2 = parseFloat(prompt("Enter second number for sum"))
 
 function Sum(num1 , num2) {
     let sum = num1 + num2
     console.log("Sum = " + sum);
 }
 
-Sum(6 , 5)
+Sum(num1 , num2)
+
+let n1 = parseFloat(prompt("Enter first number for Check"))
+let n2 = parseFloat(prompt("Enter second number for Check"))
 
 function NegativeChecker(num1 , num2) {
     if (Math.abs(num1) == num1) {
-        console.log("first number positive and second number negative");
+        console.log("first number positive");
     } else {
-        console.log("first number negative and second number positive");
+        console.log("first number negative");
+    }
+    if (Math.abs(num2) == num2) {
+        console.log("second number positive");
+    } else {
+        console.log("second number negative");
     }
 }
 
-NegativeChecker(-1 , 2)
-NegativeChecker(3 , -5)
+NegativeChecker(n1 , n2)
+
+let str = prompt("Enter String to reverse it:")
 
 function reverseString(str) {
     let restr = ""
@@ -44,5 +59,4 @@ function reverseString(str) {
     console.log(restr);
 }
 
-reverseString("Welcome")
-reverseString("Peter")
+reverseString(str)
