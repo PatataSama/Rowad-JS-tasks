@@ -1,10 +1,10 @@
 let num = parseInt(prompt("Enter the number:"))
 
 function EvenOrOdd(num) {
-    if (num%2 == 0) {
-        console.log("The number is even");
-    }else{
+    if (num&1) {
         console.log("The number is odd");
+    }else{
+        console.log("The number is even");
     }
 }
 
