@@ -6,11 +6,11 @@ let color2 = btn1.value
 
 let root = document.querySelector(":root")
 
-btn1.addEventListener("change" , function () {
+btn1.addEventListener("input" , function () {
     let color1 = btn1.value
     root.style.setProperty("--color-1", color1)
 })
-btn2.addEventListener("change" , function () {
+btn2.addEventListener("input" , function () {
     let color2 = btn2.value
     root.style.setProperty("--color-2", color2)
 })
