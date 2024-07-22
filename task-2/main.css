@@ -1,0 +1,16 @@
+:root {
+    --color-1 : black;
+    --color-2 : black;
+}
+
+body {
+    background-image: linear-gradient(to right , var(--color-1) , var(--color-2));
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    text-align: center;
+}
